@@ -12,10 +12,10 @@
         <TextBox x:Name="ApellidoTextBox" HorizontalAlignment="Left" Height="23" Margin="42,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="TextBoxKeyDown"/>
         <TextBlock x:Name="ApellidoTextBlock" HorizontalAlignment="Left" Margin="42,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Text="Apellido" Tag="2"/>
         <TextBlock x:Name="EdadTextBlock" HorizontalAlignment="Left" Margin="42,267,0,0" TextWrapping="Wrap" Text="Edad" VerticalAlignment="Top" FontSize="18" Tag="3"/>
-        <TextBox x:Name="EdadTextBox" HorizontalAlignment="Left" Height="23" Margin="42,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="EdadTextBox" HorizontalAlignment="Left" Height="23" Margin="42,296,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyDown="EdadTextBoxKeyDown"/>
         <TextBlock x:Name="MensajeAyuda1TextBlock" HorizontalAlignment="Left" Margin="186,96,0,0" TextWrapping="Wrap" Text="Nombre del cliente" VerticalAlignment="Top" Height="23" Width="151" FontSize="14" Foreground="#FF767676" Visibility="Hidden"/>
         <TextBlock x:Name="MensajeAyuda2TextBlock" HorizontalAlignment="Left" Margin="186,200,0,0" TextWrapping="Wrap" Text="Apellido del usuario" VerticalAlignment="Top" Height="23" Width="151" FontSize="14" Foreground="#FF767676" Visibility="Hidden"/>
-        <TextBlock x:Name="MensajeEdadTextblock" HorizontalAlignment="Left" Margin="186,296,0,0" TextWrapping="Wrap" Text="Edad Incorrecta" VerticalAlignment="Top" Height="23" Width="151" FontSize="14" Foreground="Red" Visibility="Hidden"/>
+        <TextBlock x:Name="MensajeEdadTextblock" HorizontalAlignment="Left" Margin="186,296,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="151" FontSize="14" Foreground="Red"/>
 
     </Grid>
 </Window>

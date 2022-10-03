@@ -24,15 +24,29 @@ namespace Tema2_CuadrosTexto
         {
             InitializeComponent();
             NombreTextBox.Tag = MensajeAyuda1TextBlock;
+            ApellidoTextBox.Tag = MensajeAyuda2TextBlock;
         }
-
-        
 
         private void TextBoxKeyDown(object sender, KeyEventArgs e)
         {
             if(e.Key == Key.F1)
             {
                 TextBlock texto = (TextBlock)(sender as TextBox).Tag;
+                if (texto.Visibility == Visibility.Hidden)
+                    texto.Visibility = Visibility.Visible;
+                else
+                    texto.Visibility = Visibility.Hidden;
+            }
+        }
+
+        private void EdadTextBoxKeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.Key == Key.F2)
+            {
+                if (int.TryParse((sender as TextBox).Text, out _))
+                    MensajeEdadTextblock.Text = "";
+                else
+                    MensajeEdadTextblock.Text = "Edad incorrecta";
             }
         }
     }
